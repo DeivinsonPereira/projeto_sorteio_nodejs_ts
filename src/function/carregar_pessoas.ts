@@ -1,0 +1,13 @@
+import fs from "fs";
+import Pessoa from "../model/pessoa";
+
+export default function carregarPessoas(arquivo: string): Pessoa[] {
+  const conteudo = fs.readFileSync(arquivo, 'utf-8');
+  const linhas = conteudo.split("\n");
+  const pessoas = linhas.filter(l => l.trim().length > 0).map(linha => {
+    const [nome, email] = linha.split(";");
+    const pessoa = new Pessoa(nome.trim(), email.trim())
+    return pessoa
+  });
+  return pessoas;
+}

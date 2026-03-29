@@ -1,0 +1,28 @@
+{
+  "name": "projeto_sorteio_nodejs_ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "npx tsx ./src/index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DeivinsonPereira/projeto_sorteio_nodejs_ts.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/DeivinsonPereira/projeto_sorteio_nodejs_ts/issues"
+  },
+  "homepage": "https://github.com/DeivinsonPereira/projeto_sorteio_nodejs_ts#readme",
+  "dependencies": {
+    "terminal-kit": "^3.1.2"
+  },
+  "devDependencies": {
+    "@types/node": "^25.5.0",
+    "@types/terminal-kit": "^2.5.7"
+  }
+}
